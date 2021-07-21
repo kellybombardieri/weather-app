@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+    
+    
+    <link rel="stylesheet" href="./assets/css/style.css">
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    
+    <title>Weather Dashboard</title>
+</head>
+<body>
+
+    <header class="header">
+        <h1>WEATHER DASHBOARD</h1>
+    </header>
+
+      
+    <div class="container">
+        
+        <div class="row">
+            <div class="col-3 bg-city">
+                <h4>Search by City</h4>
+                
+                <form id="city-form">
+                    <div><input type="text" id="city-name"></div>
+                    <div><input type="submit"></div>
+                </form>
+            </div> 
+
+            <div id="show"></div>
+        </div>
+    </div>
+   
+    <div class="container">
+        <div class="col-9 weather-conditions">
+            <h4>Current Weather Conditions</h4>
+            <div id="city"></div>
+            <div id="date"></div>
+            <div id="description"></div>
+            <div id="icon"></div>
+            <div id="temp"></div>
+            <div id="humidity"></div>
+            <div id="speed"></div>
+            <div id="index"></div>
+        </div>
+    </div>
+       
+    <div class="container-fluid">
+        <h4>
+            5-Day Forecast:
+        </h4>
+
+        <div class="card text-white bg-primary mb-3" style="max-width: 9rem;">
+            <div class="dayOne">
+                <p class="temp"></p>
+                <p class="humidity"></p>
+                <div id="icon"></div>
+            </div> 
+        </div>
+
+        <div class="card text-white bg-primary mb-3" style="max-width: 9rem;">
+            <div class="dayTwo">
+                <p class="temp"></p>
+                <p class="humidity"></p>
+                <div id="icon"></div>
+            </div>
+        </div>
+
+        <div class="card text-white bg-primary mb-3" style="max-width: 9rem;">
+            <div class="dayThree">
+                <p class="temp"></p>
+                <p class="humidity"></p>
+                <div id="icon"></div>
+            </div>
+        </div>
+            
+        <div class="card text-white bg-primary mb-3" style="max-width: 9rem;">
+            <div class="dayFour">
+                <p class="temp"></p>
+                <p class="humidity"></p>
+                <div id="icon"></div>
+            </div>
+        </div>
+
+        <div class="card text-white bg-primary mb-3" style="max-width: 9rem;">
+            <div class="dayFive">
+                <p class="temp"></p>
+                <p class="humidity"></p>
+                <div id="icon"></div>
+            </div>
+        </div>
+    </div>
+     
+     <script src="./assets/javascript/script.js"></script>
+</body>
+</html>  
+
+
